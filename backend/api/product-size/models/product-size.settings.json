@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_sizes",
+  "info": {
+    "name": "Product_size",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "product_types": {
+      "collection": "product-types"
+    },
+    "products": {
+      "via": "product_sizes",
+      "collection": "products"
+    }
+  }
+}

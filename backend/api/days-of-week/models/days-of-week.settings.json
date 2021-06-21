@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "days_of_weeks",
+  "info": {
+    "name": "Days_of_week",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rus_name": {
+      "type": "string"
+    },
+    "eng_name": {
+      "type": "string"
+    }
+  }
+}

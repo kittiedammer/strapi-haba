@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_coordinates_coordinates",
+  "info": {
+    "name": "Coordinates",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "rus_name": {
+      "type": "string"
+    },
+    "eng_name": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "decimal"
+    },
+    "lng": {
+      "type": "decimal"
+    }
+  }
+}

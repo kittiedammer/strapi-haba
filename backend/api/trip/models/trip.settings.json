@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trips",
+  "info": {
+    "name": "Trip",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "price_unit": {
+      "model": "price-units"
+    },
+    "coordinates": {
+      "type": "component",
+      "repeatable": false,
+      "component": "coordinates.coordinates"
+    },
+    "map_line": {
+      "type": "json"
+    },
+    "important": {
+      "type": "richtext"
+    },
+    "feature": {
+      "type": "component",
+      "repeatable": true,
+      "component": "value.value"
+    },
+    "included": {
+      "type": "richtext"
+    },
+    "not_included": {
+      "type": "richtext"
+    },
+    "reservation_info": {
+      "type": "richtext"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "shifts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "schedule.shifts"
+    },
+    "plan": {
+      "type": "component",
+      "repeatable": true,
+      "component": "schedule.plan"
+    },
+    "guide": {
+      "via": "guides_trips",
+      "plugin": "users-permissions",
+      "collection": "user",
+      "dominant": true
+    }
+  }
+}

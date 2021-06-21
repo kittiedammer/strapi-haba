@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_types",
+  "info": {
+    "name": "Product_types",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "products": {
+      "via": "product_types",
+      "collection": "products"
+    },
+    "parent_product_type": {
+      "model": "product-types"
+    }
+  }
+}

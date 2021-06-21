@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_schedule_plans",
+  "info": {
+    "name": "plan",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "day_description": {
+      "type": "richtext"
+    }
+  }
+}

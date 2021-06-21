@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_value_values",
+  "info": {
+    "name": "Value",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "tags_with_value": {
+      "model": "tags-with-value"
+    },
+    "tags_values": {
+      "collection": "tags-values"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "min_price": {
+      "type": "integer"
+    },
+    "max_price": {
+      "type": "integer"
+    },
+    "price_unit": {
+      "model": "price-units"
+    },
+    "rus_text": {
+      "type": "richtext"
+    },
+    "eng_text": {
+      "type": "richtext"
+    },
+    "number": {
+      "type": "decimal"
+    },
+    "time": {
+      "type": "time"
+    }
+  }
+}

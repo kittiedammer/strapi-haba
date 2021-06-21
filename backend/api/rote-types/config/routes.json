@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rote-types",
+      "handler": "rote-types.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rote-types/count",
+      "handler": "rote-types.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rote-types/:id",
+      "handler": "rote-types.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rote-types",
+      "handler": "rote-types.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rote-types/:id",
+      "handler": "rote-types.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rote-types/:id",
+      "handler": "rote-types.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

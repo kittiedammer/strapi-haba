@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tags-with-values",
+      "handler": "tags-with-value.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tags-with-values/count",
+      "handler": "tags-with-value.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tags-with-values/:id",
+      "handler": "tags-with-value.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tags-with-values",
+      "handler": "tags-with-value.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tags-with-values/:id",
+      "handler": "tags-with-value.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tags-with-values/:id",
+      "handler": "tags-with-value.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

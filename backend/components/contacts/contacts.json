@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contacts_contacts",
+  "info": {
+    "name": "Contacts",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "rus_name": {
+      "type": "string"
+    },
+    "eng_name": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    }
+  }
+}

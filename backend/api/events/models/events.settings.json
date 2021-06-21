@@ -1,0 +1,128 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "Events",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "entry_title": {
+      "type": "string"
+    },
+    "rus_params": {
+      "type": "component",
+      "repeatable": true,
+      "component": "place-params.place-params"
+    },
+    "eng_params": {
+      "type": "component",
+      "repeatable": true,
+      "component": "place-params.place-params"
+    },
+    "Coordinates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "coordinates.coordinates"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "is_partner": {
+      "type": "boolean"
+    },
+    "Vr": {
+      "type": "string"
+    },
+    "map_line": {
+      "type": "json"
+    },
+    "Start_day": {
+      "type": "date"
+    },
+    "Start_time": {
+      "type": "time"
+    },
+    "End_date": {
+      "type": "date"
+    },
+    "End_time": {
+      "type": "time"
+    },
+    "duration": {
+      "type": "decimal"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "phones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.contacts"
+    },
+    "email": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.contacts"
+    },
+    "site": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.contacts"
+    },
+    "tags_with_value": {
+      "type": "component",
+      "repeatable": true,
+      "component": "value.value"
+    },
+    "recommendation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recommendations.recommendation"
+    },
+    "event_type": {
+      "model": "event-types"
+    },
+    "rote_types": {
+      "via": "events",
+      "collection": "rote-types",
+      "dominant": true
+    },
+    "tags": {
+      "via": "events",
+      "collection": "tags",
+      "dominant": true
+    },
+    "duration_unit": {
+      "model": "duration-units"
+    },
+    "price_unit": {
+      "model": "price-units"
+    },
+    "attractions": {
+      "via": "events",
+      "collection": "places",
+      "dominant": true
+    },
+    "days_of_weeks": {
+      "collection": "days-of-week"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_recommendations_recommendations",
+  "info": {
+    "name": "recommendation",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "rote_type": {
+      "model": "rote-types"
+    },
+    "recommendations": {
+      "collection": "recommendations"
+    }
+  }
+}

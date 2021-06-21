@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/duration-units",
+      "handler": "duration-units.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/duration-units/count",
+      "handler": "duration-units.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/duration-units/:id",
+      "handler": "duration-units.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/duration-units",
+      "handler": "duration-units.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/duration-units/:id",
+      "handler": "duration-units.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/duration-units/:id",
+      "handler": "duration-units.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

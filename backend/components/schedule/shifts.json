@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_schedule_shifts",
+  "info": {
+    "name": "shifts",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "max_places": {
+      "type": "integer"
+    },
+    "reserved": {
+      "type": "integer"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

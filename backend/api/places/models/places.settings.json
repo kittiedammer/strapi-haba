@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "places",
+  "info": {
+    "name": "Places",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "entry_title": {
+      "type": "string"
+    },
+    "events": {
+      "via": "attractions",
+      "collection": "events"
+    },
+    "rus_params": {
+      "type": "component",
+      "repeatable": true,
+      "component": "place-params.place-params"
+    },
+    "eng_params": {
+      "type": "component",
+      "repeatable": true,
+      "component": "place-params.place-params"
+    },
+    "coordinates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "coordinates.coordinates"
+    },
+    "Images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "is_partner": {
+      "type": "boolean"
+    },
+    "phones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.contacts"
+    },
+    "email": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.contacts"
+    },
+    "site": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.contacts"
+    },
+    "duration": {
+      "type": "decimal"
+    },
+    "Stream": {
+      "type": "string"
+    },
+    "Vr": {
+      "type": "string"
+    },
+    "open_time": {
+      "type": "component",
+      "repeatable": true,
+      "component": "schedule.days-of-week"
+    },
+    "tags_with_values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "value.value"
+    },
+    "place_types": {
+      "via": "places",
+      "collection": "place-types",
+      "dominant": true
+    },
+    "tags": {
+      "via": "places",
+      "collection": "tags",
+      "dominant": true
+    },
+    "cuisines": {
+      "via": "places",
+      "collection": "cuisine",
+      "dominant": true
+    },
+    "duration_unit": {
+      "model": "duration-units"
+    }
+  }
+}

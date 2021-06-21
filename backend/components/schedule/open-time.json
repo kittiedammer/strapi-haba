@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_schedule_open_times",
+  "info": {
+    "name": "Open_time",
+    "icon": "history"
+  },
+  "options": {},
+  "attributes": {
+    "open_time": {
+      "type": "time"
+    },
+    "close_time": {
+      "type": "time"
+    }
+  }
+}

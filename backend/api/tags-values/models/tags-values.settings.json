@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags_values",
+  "info": {
+    "name": "Tags_values",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rus_name": {
+      "type": "string"
+    },
+    "eng_name": {
+      "type": "string"
+    },
+    "tags_with_values": {
+      "via": "tags_values",
+      "collection": "tags-with-value"
+    }
+  }
+}

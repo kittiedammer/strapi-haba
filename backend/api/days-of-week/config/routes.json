@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/days-of-weeks",
+      "handler": "days-of-week.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/days-of-weeks/count",
+      "handler": "days-of-week.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/days-of-weeks/:id",
+      "handler": "days-of-week.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/days-of-weeks",
+      "handler": "days-of-week.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/days-of-weeks/:id",
+      "handler": "days-of-week.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/days-of-weeks/:id",
+      "handler": "days-of-week.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

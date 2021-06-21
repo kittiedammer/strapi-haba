@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recommendations",
+  "info": {
+    "name": "Recommendations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rus_text": {
+      "type": "richtext"
+    },
+    "eng_text": {
+      "type": "richtext"
+    },
+    "rote_types": {
+      "via": "recommendations",
+      "collection": "rote-types",
+      "dominant": true
+    }
+  }
+}

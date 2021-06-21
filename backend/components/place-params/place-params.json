@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_place_params_place_params",
+  "info": {
+    "name": "Place_params",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "info": {
+      "type": "richtext"
+    },
+    "important": {
+      "type": "richtext"
+    },
+    "discount": {
+      "type": "richtext"
+    }
+  }
+}

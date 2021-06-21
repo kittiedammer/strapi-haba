@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "price_units",
+  "info": {
+    "name": "Price_units",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rus_name": {
+      "type": "string"
+    },
+    "eng_name": {
+      "type": "string"
+    }
+  }
+}
